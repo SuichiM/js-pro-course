@@ -21,8 +21,16 @@ const fetchComments = async () => {
   const comments = await fetchCommentsData();
   const commentsList = document.querySelector("#commentsList");
 
-  commentsList.innerHTML = comments.map(({comment}) => `<li>${comment}</li>`).join('<br/>');
+  commentsList.innerHTML = comments
+    .map(({ comment }) => `<li>${comment}</li>`)
+    .join("<br/>");
 };
 
+/** MAIN */
 fetchComments();
 
+if ("serviceWorker" in navigator) {
+   navigator.serviceWorker.register("/sw.js").catch((error)=>{
+     console.log(error)
+   })
+}
