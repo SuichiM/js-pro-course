@@ -10,5 +10,7 @@ services:
     ports: 
       - 8080:8080
       - 9229:9229
+      - 1234:1234
+      - 34539:34539
     environment:
       - COMMAND=${COMMAND}
