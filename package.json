@@ -8,7 +8,7 @@
     "platzi"
   ],
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html",
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html --hmr-port 34539",
     "start:js": "live-server"
   },
   "devDependencies": {
