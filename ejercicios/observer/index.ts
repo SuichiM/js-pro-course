@@ -3,9 +3,11 @@ import BtcObserver from './Observer'
 
 const elSubject:HTMLInputElement = document.querySelector('#value')
 const elObserver:HTMLElement = document.querySelector('#price')
-
+const elObserver2:HTMLElement = document.querySelector('#pageTitle')
 
 const bitcoinSubject = new BtcSubject(elSubject)
-const bitcoinObserver = new BtcObserver(elObserver)
+const bitcoinObserver1 = new BtcObserver(elObserver)
+const bitcoinObserver2 = new BtcObserver(elObserver2)
 
-bitcoinSubject.suscribe(bitcoinObserver)
+bitcoinSubject.suscribe(bitcoinObserver1)
+bitcoinSubject.suscribe(bitcoinObserver2)
