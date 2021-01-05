@@ -1,6 +1,6 @@
 import IObserver from "./IObserver";
 
-class PriceDisplay implements IObserver{
+class Observer implements IObserver{
   private value : any
   private element: HTMLElement;
 
@@ -19,4 +19,4 @@ class PriceDisplay implements IObserver{
   }
 }
 
-export default PriceDisplay
+export default Observer

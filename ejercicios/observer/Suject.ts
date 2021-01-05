@@ -5,7 +5,7 @@ import ISubject from "./ISubject";
  * THIS CLASS IMPLEMENTS THE INTERFACE SUBJECT
  * IS THE CONCRETE CLASS
  */
-class BitcoinPrice implements ISubject {
+class Subject implements ISubject {
   private observers: IObserver[] = [];
   private element: HTMLInputElement;
 
@@ -33,4 +33,4 @@ class BitcoinPrice implements ISubject {
   }
 }
 
-export default BitcoinPrice;
+export default Subject;
